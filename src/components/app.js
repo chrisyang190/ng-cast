@@ -1,11 +1,14 @@
 angular.module('video-player')
 .controller('AppController', ['$scope', function($scope) {
   $scope.videos = window.exampleVideoData;
+  $scope.video = window.exampleVideoData[0];
   console.log('app scope', $scope);
 
   $scope.onClick = function() {
 
   };
+
+  
 }]) 
 
 .directive('app', function() {
@@ -14,9 +17,15 @@ angular.module('video-player')
     //   this.videos = window.exampleVideoData;
     //   console.log('app scope', this);
     // },
+
+    // controllerAs: 'ctrl',
+    // bindToController: true,
     templateUrl: 'src/templates/app.html',
     // controller: function($scope) {
-    //   console.log($scope);
+    //   // console.log('app scope', $scope);
+    //   $scope.selectVideo = function() {
+
+    //   };
     // }
   };
 
