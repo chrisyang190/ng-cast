@@ -4,7 +4,10 @@ angular.module('video-player')
   $scope.video = window.exampleVideoData[0];
   console.log('app scope', $scope);
 
-  $scope.onClick = function() {
+  $scope.onClick = function(index) {
+    console.log('before', $scope.video.snippet.title);
+    $scope.video = $scope.videos[index];
+    console.log('after', $scope.video.snippet.title);
 
   };
 
