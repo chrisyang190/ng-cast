@@ -22,17 +22,18 @@ angular.module('video-player')
       this.currentVideo = $window.exampleVideoData[0];
         // console.log('app scope', $scope);
 
-      this.onClick = function(index) {
-        console.log('before', this.currentVideo.snippet.title);
-        this.currentVideo = this.videos[index];
-          // console.log('after', $scope.video.snippet.title);
+      // this.onClick = (index) => {
+      //   // console.log('before', this.currentVideo.snippet.title);
+      //   this.currentVideo = this.videos[index];
+      //     // console.log('after', $scope.video.snippet.title);
 
-      };
+      // };
 
       this.searchService = youTube;
-      this.selectVideo = function() {
 
-
+      this.selectVideo = (video) => {
+        console.log('click');
+        this.currentVideo = video;
       };
 
       //youTube.search('cats');

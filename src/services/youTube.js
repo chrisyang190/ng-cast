@@ -1,5 +1,5 @@
 angular.module('video-player')
-.service('youTube', function($http) {
+.service('youTube', function($http, $window) {
 
 
   // TODO
