@@ -13,7 +13,7 @@ angular.module('video-player')
     templateUrl: 'src/templates/videoList.html',
 
     controller: function($scope) {
-      console.log('videoList scope', $scope);
+      // console.log('videoList scope', $scope);
     }
 
   };

@@ -11,7 +11,7 @@ angular.module('video-player')
     templateUrl: 'src/templates/videoListEntry.html',
 
     controller: function($scope) {
-      console.log('videoListEntry scope', $scope);
+      // console.log('videoListEntry scope', $scope);
     }
   };
 });
